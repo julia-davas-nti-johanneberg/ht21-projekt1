@@ -1,7 +1,35 @@
+#wrapper {
+    display: grid;
+    grid-template-areas:
+    'hd'
+    'ft';
+    grid-template-rows: 20rem 20rem;
+}
+
+header {
+    grid-area: hd;
+    display: grid;
+    display: flex;
+    background-color: darkslateblue;
+}
+
+footer {
+    grid-area: ft;
+    background-color:dodgerblue;
+    display: flex;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+
 ul {
     list-style-type: none;
 }
 
 li {
     display: inline;
+}
+
+#logo {
+    height: 10rem;
 }
