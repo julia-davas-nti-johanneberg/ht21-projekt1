@@ -3,16 +3,54 @@
     grid-template-areas:
     'hd'
     'ft';
-    grid-template-rows: 20rem 20rem;
+    grid-template-rows: 30rem 20rem;
 }
 
 header {
     grid-area: hd;
-    display: grid;
-    display: flex;
     background-color: darkslateblue;
 }
 
+#upp {
+    display: grid;
+    grid-template-areas: 
+    'h1 nav';
+}
+
+#upp2 {
+    display: grid;
+    grid-template-areas: 
+    'logo1 h2 h2'
+    'logo1 h3 h3';
+    width: 50%;
+    margin: auto;
+}
+
+h1 {
+    display: flex;
+    justify-content: flex-start;
+    grid-area: h1;
+
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    grid-area: nav;
+}
+
+h2 {
+    grid-area: h2;
+}
+
+h3 {
+    grid-area: h3;
+}
+
+#logo1 {
+    height: 18rem;
+    grid-area: logo1;
+}
 
 ul {
     list-style-type: none;
@@ -28,7 +66,7 @@ footer {
     padding-top: 2rem;
 }
 
-#logo {
+#logo2 {
     height: 7rem;
 }
 
