@@ -4,34 +4,39 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 30rem 50rem 20rem;
+    grid-template-rows: 38rem 50rem 20rem;
 }
 
 header {
     grid-area: hd;
-    background-color: darkslateblue;
+    background-color: rgb(159, 212, 185);
 }
 
 #upp {
     display: grid;
     grid-template-areas: 
-    'h1 nav';
+    'h5 nav';
 }
 
 #upp2 {
     display: grid;
     grid-template-areas: 
-    'logo1 h1 h1'
-    'logo1 h2 h2';
-    width: 50%;
+    'logo1 h1'
+    'logo1 h2';
+    grid-template-columns: 23rem 40rem;
+    grid-template-rows: 9rem 15rem;
+    width: 70%;
     margin: auto;
 }
 
 h5 {
     display: flex;
     justify-content: flex-start;
-    grid-area: h1;
+    grid-area: h5;
     font-family: 'Playfair Display';
+    margin-left: 3rem;
+    margin-top: 2rem;
+    font-size: 3em
 }
 
 nav {
@@ -39,21 +44,29 @@ nav {
     justify-content: flex-end;
     grid-area: nav;
     font-family: 'Lato';
+    margin-right: 3rem;
+    margin-top: 3rem;
 }
 
 h1 {
     grid-area: h1;
     font-family: 'Playfair Display';
+    display: flex;
+    font-size: 5em;
 }
 
 h2 {
     grid-area: h2;
     font-family: 'Lato';
+    display: flex;
+    font-size: 2em;
 }
 
 #logo1 {
-    height: 18rem;
+    height: 23rem;
     grid-area: logo1;
+    display: flex;
+    justify-content: center;
 }
 
 ul {
@@ -66,12 +79,12 @@ li {
 
 main {
     grid-area: mn;
-    background-color: deeppink;
+    background-color: rgb(252, 195, 152);
 }
 
 footer {
     grid-area: ft;
-    background-color:dodgerblue;
+    background-color:rgb(91, 169, 139);
     padding-top: 2rem;
 }
 
