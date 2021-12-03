@@ -26,25 +26,28 @@ header {
     margin: auto;
 }
 
-h4 {
+h5 {
     display: flex;
     justify-content: flex-start;
     grid-area: h1;
-
+    font-family: 'Playfair Display';
 }
 
 nav {
     display: flex;
     justify-content: flex-end;
     grid-area: nav;
+    font-family: 'Lato';
 }
 
 h1 {
     grid-area: h1;
+    font-family: 'Playfair Display';
 }
 
 h2 {
     grid-area: h2;
+    font-family: 'Lato';
 }
 
 #logo1 {
@@ -78,4 +81,12 @@ footer {
 #footerinfo {
     display: flex;
     justify-content: space-around;
+}
+
+h6 {
+    font-family: 'Playfair Display';
+}
+
+p {
+    font-family: 'Lato';
 }
