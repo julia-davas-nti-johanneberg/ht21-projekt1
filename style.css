@@ -4,7 +4,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 38rem 50rem 20rem;
+    grid-template-rows: 33rem 50rem 30rem;
 }
 
 header {
@@ -16,17 +16,6 @@ header {
     display: grid;
     grid-template-areas: 
     'h5 nav';
-}
-
-#upp2 {
-    display: grid;
-    grid-template-areas: 
-    'logo1 h1'
-    'logo1 h2';
-    grid-template-columns: 23rem 40rem;
-    grid-template-rows: 9rem 15rem;
-    width: 70%;
-    margin: auto;
 }
 
 h5 {
@@ -48,25 +37,32 @@ nav {
     margin-top: 3rem;
 }
 
+#upp2 {
+    display: grid;
+    grid-template-areas: 
+    'logo1 h1'
+    'logo1 h2';
+    grid-template-columns: 16rem 40rem;
+    grid-template-rows: 7rem 10rem;
+    width: 65%;
+    margin: auto;
+}
+
 h1 {
     grid-area: h1;
     font-family: 'Playfair Display';
-    display: flex;
-    font-size: 5em;
+    font-size: 4em;
 }
 
 h2 {
     grid-area: h2;
     font-family: 'Lato';
-    display: flex;
-    font-size: 2em;
+    font-size:1.5em;
 }
 
 #logo1 {
-    height: 23rem;
+    height: 15rem;
     grid-area: logo1;
-    display: flex;
-    justify-content: center;
 }
 
 ul {
@@ -82,6 +78,46 @@ main {
     background-color: rgb(252, 195, 152);
 }
 
+#fyrasteg {
+    background-color: indianred;
+    margin: 5rem;
+}
+
+#fyra {
+    display: flex;
+    justify-content: space-around;
+}
+
+#ett {
+    display: flex;
+    justify-content: center;
+    background-color: maroon;
+}
+
+#a {
+    margin: 2rem;
+}
+
+h3 {
+    font-family: 'Playfair Display';
+}
+
+h4 {
+    font-family: 'Playfair Display';
+}
+
+#review {
+    width: 11rem;
+}
+
+#boxreview1 {
+    background-color: mediumseagreen;
+}
+
+#boxreview2 {
+    background-color: crimson;
+}
+
 footer {
     grid-area: ft;
     background-color:rgb(91, 169, 139);
@@ -89,7 +125,7 @@ footer {
 }
 
 #logo2 {
-    height: 7rem;
+    height: 9rem;
 }
 
 #footerlogga {
@@ -104,8 +140,25 @@ footer {
 
 h6 {
     font-family: 'Playfair Display';
+    font-size: 18px;
 }
 
 p {
     font-family: 'Lato';
+}
+
+#findus { 
+    height: 3rem;
+}
+
+#contactus {
+    height: 3rem;
+}
+
+#followus {
+    height: 3rem;
+}
+
+#openinghours {
+    height: 3rem;
 }
