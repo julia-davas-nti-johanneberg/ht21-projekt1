@@ -20,13 +20,13 @@ header {
 #upp2 {
     display: grid;
     grid-template-areas: 
-    'logo1 h2 h2'
-    'logo1 h3 h3';
+    'logo1 h1 h1'
+    'logo1 h2 h2';
     width: 50%;
     margin: auto;
 }
 
-h1 {
+h4 {
     display: flex;
     justify-content: flex-start;
     grid-area: h1;
@@ -39,12 +39,12 @@ nav {
     grid-area: nav;
 }
 
-h2 {
-    grid-area: h2;
+h1 {
+    grid-area: h1;
 }
 
-h3 {
-    grid-area: h3;
+h2 {
+    grid-area: h2;
 }
 
 #logo1 {
