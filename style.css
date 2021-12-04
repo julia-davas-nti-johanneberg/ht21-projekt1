@@ -4,7 +4,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 33rem 50rem 30rem;
+    grid-template-rows: 32rem 50rem 30rem;
 }
 
 header {
@@ -34,7 +34,7 @@ nav {
     grid-area: nav;
     font-family: 'Lato';
     margin-right: 3rem;
-    margin-top: 3rem;
+    margin-top: 2.7rem;
 }
 
 #upp2 {
@@ -71,6 +71,8 @@ ul {
 
 li {
     display: inline;
+    margin-left: 2rem;
+    font-size: 1.3rem;
 }
 
 main {
@@ -81,6 +83,7 @@ main {
 #fyrasteg {
     background-color: indianred;
     margin: 5rem;
+    padding: 2rem;
 }
 
 #fyra {
@@ -88,10 +91,13 @@ main {
     justify-content: space-around;
 }
 
-#ett {
+#b {
     display: flex;
     justify-content: center;
     background-color: maroon;
+    width: 20rem;
+    margin: auto;
+    font-size: 1.2rem;
 }
 
 #a {
@@ -106,16 +112,30 @@ h4 {
     font-family: 'Playfair Display';
 }
 
+#tworeviews {
+    display: flex;
+    justify-content: center;
+    font-size: 1.3rem;
+}
+
 #review {
     width: 11rem;
 }
 
 #boxreview1 {
     background-color: mediumseagreen;
+    width: 20rem;
+    height: 10rem;
+    margin-right: 2rem;
+    padding: 2rem;
 }
 
 #boxreview2 {
     background-color: crimson;
+    width: 20rem;
+    height: 10rem;
+    margin-left: 2rem;
+    padding: 2rem;
 }
 
 footer {
