@@ -37,6 +37,23 @@ nav {
     margin-top: 2.7rem;
 }
 
+a {
+    text-decoration: none;
+    color: fuchsia;
+}
+
+a:hover {
+    color:deepskyblue;
+}
+
+#knapp {
+    color:goldenrod;
+}
+
+#knapp:hover {
+    color:lawngreen;
+}
+
 #upp2 {
     display: grid;
     grid-template-areas: 
@@ -73,6 +90,7 @@ li {
     display: inline;
     margin-left: 2rem;
     font-size: 1.3rem;
+    color: fuchsia;
 }
 
 main {
@@ -138,6 +156,10 @@ h4 {
     padding: 2rem;
 }
 
+#citat {
+    font-size: 1.5rem;
+}
+
 footer {
     grid-area: ft;
     background-color:rgb(91, 169, 139);
@@ -151,6 +173,8 @@ footer {
 #footerlogga {
     display: flex;
     justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
 }
 
 #footerinfo {
