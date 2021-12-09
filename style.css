@@ -4,7 +4,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 32rem 50rem 30rem;
+    grid-template-rows: 32rem 80rem 30rem;
 }
 
 header {
@@ -71,7 +71,7 @@ h1 {
     font-size: 4em;
 }
 
-h2 {
+#pheader {
     grid-area: h2;
     font-family: 'Lato';
     font-size:1.5em;
@@ -86,7 +86,7 @@ ul {
     list-style-type: none;
 }
 
-li {
+.navlista {
     display: inline;
     margin-left: 2rem;
     font-size: 1.3rem;
@@ -205,4 +205,59 @@ p {
 
 #openinghours {
     height: 3rem;
+}
+
+#sectionA {
+    display: grid;
+    grid-template-areas: 
+    'kl de';
+    display: flex;
+    justify-content: center;
+}
+
+#klassisk {
+    grid-area: kl;
+    width: 20rem;
+    height: 25rem;
+    background-color: chocolate;
+    margin:2rem;
+}
+
+#degistive {
+    grid-area: de;
+    width: 20rem;
+    height: 25rem;
+    background-color: chocolate;
+    margin:2rem;
+}
+
+#sectionB {
+    display: grid;
+    grid-template-areas: 
+    'f1 f2';
+    display: flex;
+    justify-content: center;
+}
+
+#favorit1 {
+    grid-area: f1;
+    width: 20rem;
+    height: 25rem;
+    background-color: chocolate;
+    margin:2rem;
+}
+
+#favorit2 {
+    grid-area: f2;
+    width: 20rem;
+    height: 25rem;
+    background-color: chocolate;
+    margin:2rem;
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-size: 30px;
+    display: flex;
+    justify-content: center;
 }
