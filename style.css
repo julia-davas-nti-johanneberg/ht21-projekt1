@@ -82,8 +82,12 @@ h1 {
     grid-area: logo1;
 }
 
-ul {
+ol {
     list-style-type: none;
+}
+
+ul {
+    font-family: 'Lato';
 }
 
 .navlista {
@@ -210,7 +214,7 @@ p {
 #sectionA {
     display: grid;
     grid-template-areas: 
-    'kl de';
+    'kl wr de';
     display: flex;
     justify-content: center;
 }
@@ -219,7 +223,15 @@ p {
     grid-area: kl;
     width: 20rem;
     height: 25rem;
-    background-color: chocolate;
+    background-color: rgb(62, 74, 143);
+    margin:2rem;
+}
+
+#wrap {
+    grid-area: wr;
+    width: 20rem;
+    height: 25rem;
+    background-color: rgb(102, 166, 209);
     margin:2rem;
 }
 
@@ -227,7 +239,7 @@ p {
     grid-area: de;
     width: 20rem;
     height: 25rem;
-    background-color: chocolate;
+    background-color: rgb(68, 52, 114);
     margin:2rem;
 }
 
@@ -243,7 +255,7 @@ p {
     grid-area: f1;
     width: 20rem;
     height: 25rem;
-    background-color: chocolate;
+    background-color: rgb(58, 30, 75);
     margin:2rem;
 }
 
@@ -251,7 +263,7 @@ p {
     grid-area: f2;
     width: 20rem;
     height: 25rem;
-    background-color: chocolate;
+    background-color: rgb(145, 70, 89);
     margin:2rem;
 }
 
@@ -260,4 +272,8 @@ h2 {
     font-size: 30px;
     display: flex;
     justify-content: center;
+}
+
+.omosssymbol {
+    height: 3rem;
 }
