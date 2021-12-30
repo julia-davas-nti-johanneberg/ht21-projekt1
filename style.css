@@ -1,4 +1,22 @@
-#wrapper {
+#wrapperhem {
+    display: grid;
+    grid-template-areas:
+    'hd'
+    'mn'
+    'ft';
+    grid-template-rows: 32rem 55rem 30rem;
+}
+
+#wrappermeny {
+    display: grid;
+    grid-template-areas:
+    'hd'
+    'mn'
+    'ft';
+    grid-template-rows: 32rem 80rem 30rem;
+}
+
+#wrapperomoss {
     display: grid;
     grid-template-areas:
     'hd'
@@ -86,10 +104,6 @@ ol {
     list-style-type: none;
 }
 
-ul {
-    font-family: 'Lato';
-}
-
 .navlista {
     display: inline;
     margin-left: 2rem;
@@ -104,7 +118,7 @@ main {
 
 #fyrasteg {
     background-color: indianred;
-    margin: 5rem;
+    margin: 1rem 5rem 5rem 5rem;
     padding: 2rem;
 }
 
@@ -128,6 +142,25 @@ main {
 
 h3 {
     font-family: 'Playfair Display';
+    font-size: 2rem;
+    margin-left: 1.4rem;
+    grid-area: h31;
+}
+
+ul {
+    font-family: 'Lato';
+    grid-area: ul1;
+    font-size: 1.2rem;
+    font-weight: 1000;
+}
+
+.pris {
+    font-size: 3rem;
+    grid-area: h32;
+}
+
+.enavfyra {
+    margin: auto;
 }
 
 h4 {
@@ -225,6 +258,12 @@ p {
     height: 25rem;
     background-color: rgb(62, 74, 143);
     margin:2rem;
+    display: grid;
+    grid-template-areas: 
+    'h31'
+    'ul1'
+    'h32';
+    grid-template-rows: 5rem 11rem auto;
 }
 
 #wrap {
@@ -233,6 +272,12 @@ p {
     height: 25rem;
     background-color: rgb(102, 166, 209);
     margin:2rem;
+    display: grid;
+    grid-template-areas: 
+    'h31'
+    'ul1'
+    'h32';
+    grid-template-rows: 5rem 11rem auto;
 }
 
 #degistive {
@@ -241,6 +286,12 @@ p {
     height: 25rem;
     background-color: rgb(68, 52, 114);
     margin:2rem;
+    display: grid;
+    grid-template-areas: 
+    'h31'
+    'ul1'
+    'h32';
+    grid-template-rows: 5rem 11rem auto;
 }
 
 #sectionB {
@@ -257,6 +308,12 @@ p {
     height: 25rem;
     background-color: rgb(58, 30, 75);
     margin:2rem;
+    display: grid;
+    grid-template-areas: 
+    'h31'
+    'ul1'
+    'h32';
+    grid-template-rows: 5rem 11rem auto;
 }
 
 #favorit2 {
@@ -265,15 +322,27 @@ p {
     height: 25rem;
     background-color: rgb(145, 70, 89);
     margin:2rem;
+    display: grid;
+    grid-template-areas: 
+    'h31'
+    'ul1'
+    'h32';
+    grid-template-rows: 5rem 11rem auto;
 }
 
 h2 {
     font-family: 'Playfair Display';
-    font-size: 30px;
+    font-size: 2.3rem;
     display: flex;
     justify-content: center;
+    margin-top: 4rem;
+    margin-bottom: auto;
 }
 
 .omosssymbol {
     height: 3rem;
+}
+
+#brödtextomoss {
+    padding: 1rem 5rem 2rem 5rem;
 }
