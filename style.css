@@ -4,7 +4,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 32rem 55rem 30rem;
+    grid-template-rows: 30rem 55rem 30rem;
 }
 
 #wrappermeny {
@@ -13,7 +13,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 32rem 80rem 30rem;
+    grid-template-rows: 30rem 80rem 30rem;
 }
 
 #wrapperomoss {
@@ -22,12 +22,26 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 32rem 80rem 30rem;
+    grid-template-rows: 30rem 80rem 30rem;
+}
+
+#headerhem {
+    background-image: url(./img/header_b.jpg);;
+    background-size: 100%;
+}
+
+#headermeny {
+    background-image: url(./img/header_a.jpg);
+    background-size: 100%;
+}
+
+#headeromoss {
+    background-image: url(./img/header_c.jpg);
+    background-size: 100%;
 }
 
 header {
     grid-area: hd;
-    background-color: rgb(159, 212, 185);
 }
 
 #upp {
@@ -43,7 +57,8 @@ h5 {
     font-family: 'Playfair Display';
     margin-left: 3rem;
     margin-top: 2rem;
-    font-size: 3em
+    font-size: 2em;
+    color: rgb(255, 226, 203);
 }
 
 nav {
@@ -52,12 +67,12 @@ nav {
     grid-area: nav;
     font-family: 'Lato';
     margin-right: 3rem;
-    margin-top: 2.7rem;
+    margin-top: 2rem;
 }
 
 a {
     text-decoration: none;
-    color: fuchsia;
+    color: rgb(255, 226, 203);
 }
 
 a:hover {
@@ -87,12 +102,14 @@ h1 {
     grid-area: h1;
     font-family: 'Playfair Display';
     font-size: 4em;
+    color: rgb(255, 226, 203);
 }
 
 #pheader {
     grid-area: h2;
     font-family: 'Lato';
     font-size:1.5em;
+    color: rgb(255, 226, 203);
 }
 
 #logo1 {
@@ -108,16 +125,16 @@ ol {
     display: inline;
     margin-left: 2rem;
     font-size: 1.3rem;
-    color: fuchsia;
+    
 }
 
 main {
     grid-area: mn;
-    background-color: rgb(252, 195, 152);
+    background-color: rgb(255, 226, 203);
 }
 
 #fyrasteg {
-    background-color: indianred;
+    background-color: rgb(234, 111, 120);
     margin: 1rem 5rem 5rem 5rem;
     padding: 2rem;
 }
@@ -130,7 +147,7 @@ main {
 #b {
     display: flex;
     justify-content: center;
-    background-color: maroon;
+    background-color: rgb(255, 226, 203);
     width: 20rem;
     margin: auto;
     font-size: 1.2rem;
@@ -143,7 +160,7 @@ main {
 h3 {
     font-family: 'Playfair Display';
     font-size: 2rem;
-    margin-left: 1.4rem;
+    margin-left: 2.2rem;
     grid-area: h31;
 }
 
@@ -152,19 +169,19 @@ ul {
     grid-area: ul1;
     font-size: 1.2rem;
     font-weight: 1000;
+    margin-left: 1rem;
 }
 
 .pris {
     font-size: 3rem;
     grid-area: h32;
+    display: flex;
+    justify-content: flex-end;
+    margin-right: 2.2rem;
 }
 
 .enavfyra {
     margin: auto;
-}
-
-h4 {
-    font-family: 'Playfair Display';
 }
 
 #tworeviews {
@@ -178,19 +195,19 @@ h4 {
 }
 
 #boxreview1 {
-    background-color: mediumseagreen;
+    background-color: rgb(149, 182, 149);
     width: 20rem;
     height: 10rem;
-    margin-right: 2rem;
-    padding: 2rem;
+    margin: auto 2rem auto 2rem;
+    padding: 3.5rem;
 }
 
 #boxreview2 {
-    background-color: crimson;
+    background-color: rgb(149, 182, 149);
     width: 20rem;
     height: 10rem;
-    margin-left: 2rem;
-    padding: 2rem;
+    margin: auto 2rem auto 2rem;
+    padding: 3.5rem;
 }
 
 #citat {
@@ -199,7 +216,7 @@ h4 {
 
 footer {
     grid-area: ft;
-    background-color:rgb(91, 169, 139);
+    background-color: rgb(234, 111, 120);
     padding-top: 2rem;
 }
 
@@ -222,10 +239,12 @@ footer {
 h6 {
     font-family: 'Playfair Display';
     font-size: 18px;
+    color: rgb(35, 8, 15);
 }
 
 p {
     font-family: 'Lato';
+    color: rgb(35, 8, 15)
 }
 
 #findus { 
@@ -264,6 +283,8 @@ p {
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
+    background-image: url(./img/meny_e.jpg);
+    background-size: cover;
 }
 
 #wrap {
@@ -278,6 +299,8 @@ p {
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
+    background-image: url(./img/meny_c.jpg);
+    background-size: cover;
 }
 
 #degistive {
@@ -292,6 +315,8 @@ p {
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
+    background-image: url(./img/meny_d.jpg);
+    background-size: cover;
 }
 
 #sectionB {
@@ -314,6 +339,8 @@ p {
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
+    background-image: url(./img/meny_a.jpg);
+    background-size: cover;
 }
 
 #favorit2 {
@@ -328,6 +355,8 @@ p {
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
+    background-image: url(./img/meny_b.jpg);
+    background-size: cover;
 }
 
 h2 {
@@ -339,10 +368,60 @@ h2 {
     margin-bottom: auto;
 }
 
-.omosssymbol {
+h4 {
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
+}
+
+.oossymbol {
     height: 3rem;
 }
 
+.rubrik {
+    display: flex;
+    justify-content: center;
+}
+
 #brödtextomoss {
-    padding: 1rem 5rem 2rem 5rem;
+    padding: 9rem;
+    padding-top: 1rem;
+}
+
+#four {
+    display: grid;
+    grid-template-areas: 
+    'art1 art2'
+    'art3 art4';
+}
+
+#art1 {
+    grid-area: art1;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    margin: auto 2rem 2rem auto;
+}
+
+#art2 {
+    grid-area: art2;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    margin: auto auto 2rem 2rem;
+}
+
+#art3 {
+    grid-area: art3;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem 2rem auto auto;
+}
+
+#art4 {
+    grid-area: art4;
+    background-color: white;
+    width: 20rem;
+    height: 20rem;
+    margin: 2rem auto auto 2rem;
 }
