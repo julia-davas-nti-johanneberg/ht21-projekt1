@@ -4,7 +4,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 30rem 55rem 30rem;
+    grid-template-rows: 30rem 72rem 34rem;
 }
 
 #wrappermeny {
@@ -13,7 +13,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 30rem 80rem 30rem;
+    grid-template-rows: 30rem 78rem 34rem;
 }
 
 #wrapperomoss {
@@ -22,22 +22,30 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 30rem 80rem 30rem;
+    grid-template-rows: 30rem 73rem 34rem;
 }
 
 #headerhem {
-    background-image: url(./img/header_b.jpg);;
+    background-image: url(./img/header_hem.jpg);;
     background-size: 100%;
 }
 
 #headermeny {
-    background-image: url(./img/header_a.jpg);
+    background-image: url(./img/header_meny.jpg);
     background-size: 100%;
 }
 
 #headeromoss {
-    background-image: url(./img/header_c.jpg);
+    background-image: url(./img/header_omoss.jpg);
     background-size: 100%;
+}
+
+.ljus {
+    color: rgb(255, 226, 203);
+}
+
+.dark {
+    color: rgb(35, 8, 15)
 }
 
 header {
@@ -76,15 +84,15 @@ a {
 }
 
 a:hover {
-    color:deepskyblue;
+    color:rgb(35, 8, 15);
 }
 
 #knapp {
-    color:goldenrod;
+    color: rgb(35, 8, 15);
 }
 
 #knapp:hover {
-    color:lawngreen;
+    color:rgb(234, 111, 120);
 }
 
 #upp2 {
@@ -101,7 +109,7 @@ a:hover {
 h1 {
     grid-area: h1;
     font-family: 'Playfair Display';
-    font-size: 4em;
+    font-size: 4.5em;
     color: rgb(255, 226, 203);
     
 }
@@ -111,11 +119,14 @@ h1 {
     font-family: 'Lato';
     font-size:1.5em;
     color: rgb(255, 226, 203);
+    padding-top: 1rem;
 }
 
 #logo1 {
-    height: 15rem;
+    height: 14rem;
     grid-area: logo1;
+    padding-left: 3rem;
+    padding-top: 1rem;
 }
 
 ol {
@@ -126,7 +137,6 @@ ol {
     display: inline;
     margin-left: 2rem;
     font-size: 1.3rem;
-    
 }
 
 main {
@@ -135,7 +145,6 @@ main {
 }
 
 #fyrasteg {
-    background-color: rgb(234, 111, 120);
     margin: 1rem 5rem 5rem 5rem;
     padding: 2rem;
 }
@@ -148,10 +157,11 @@ main {
 #b {
     display: flex;
     justify-content: center;
-    background-color: rgb(255, 226, 203);
     width: 20rem;
     margin: auto;
     font-size: 1.2rem;
+    border: solid 0.2rem rgb(35, 8, 15);
+    border-radius: 2rem;
 }
 
 #a {
@@ -163,6 +173,7 @@ h3 {
     font-size: 2rem;
     margin-left: 2.2rem;
     grid-area: h31;
+    color: rgb(255, 226, 203);
 }
 
 ul {
@@ -171,6 +182,7 @@ ul {
     font-size: 1.2rem;
     font-weight: 1000;
     margin-left: 1rem;
+    color: rgb(255, 226, 203);
 }
 
 .pris {
@@ -179,15 +191,15 @@ ul {
     display: flex;
     justify-content: flex-end;
     margin-right: 2.2rem;
+    color: rgb(255, 226, 203);
 }
 
 .enavfyra {
     margin: auto;
+    color: black;
 }
 
 #tworeviews {
-    display: flex;
-    justify-content: center;
     font-size: 1.3rem;
 }
 
@@ -195,29 +207,71 @@ ul {
     width: 11rem;
 }
 
+#rad1 {
+    display: grid;
+    grid-template-areas: 
+    'b1 p1 t1';
+}
+
+#rad2 {
+    display: grid;
+    grid-template-areas: 
+    'p2 t2 b2';
+}
+
 #boxreview1 {
-    background-color: rgb(149, 182, 149);
-    width: 20rem;
-    height: 10rem;
-    margin: auto 2rem auto 2rem;
-    padding: 3.5rem;
+    background-color: rgb(234, 111, 120);
+    width: 30rem;
+    height: 18rem;
+    margin: auto 0.5rem 0.5rem 9.8rem;
+    padding: 4.4rem;
+    box-sizing: border-box;
+    grid-area: b1;
 }
 
 #boxreview2 {
-    background-color: rgb(149, 182, 149);
-    width: 20rem;
-    height: 10rem;
-    margin: auto 2rem auto 2rem;
-    padding: 3.5rem;
+    background-color: rgb(234, 111, 120);
+    width: 30rem;
+    height: 18rem;
+    margin: 0.5rem 9.8rem auto 0.5rem;
+    padding: 4rem;
+    box-sizing: border-box;
+    grid-area: b2;
 }
 
 #citat {
     font-size: 1.5rem;
 }
 
+#person1 {
+    height: 18rem;
+    grid-area: p1;
+    margin: auto 0.5rem 0.5rem 0.5rem;
+    grid-area: p1;
+}
+
+#person2 {
+    height: 18rem;
+    grid-area: p2;
+    margin: 0.5rem 0.5rem auto 9.8rem;
+    grid-area: p2;
+}
+
+#tacobild1 {
+    height: 18rem;
+    grid-area: t1;
+    margin: auto 9.8rem 0.5rem 0.5rem;
+}
+
+#tacobild2 {
+    height: 18rem;
+    grid-area: t2;
+    margin: 0.5rem 0.5rem auto 0.5rem;
+}
+
 footer {
     grid-area: ft;
-    background-color: rgb(234, 111, 120);
+    background-color: rgb(178, 63, 77);
     padding-top: 2rem;
 }
 
@@ -237,15 +291,20 @@ footer {
     justify-content: space-around;
 }
 
+.footerinfo {
+    color: blanchedalmond;
+}
+
 h6 {
     font-family: 'Playfair Display';
-    font-size: 18px;
-    color: rgb(35, 8, 15);
+    font-size: 1.3rem;
+    color: rgb(255, 226, 203);
 }
 
 p {
     font-family: 'Lato';
-    color: rgb(35, 8, 15)
+    color: rgb(35, 8, 15);
+    font-size: 1.2rem;
 }
 
 #findus { 
@@ -269,7 +328,7 @@ p {
     grid-template-areas: 
     'kl wr de';
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
 #klassisk {
@@ -277,15 +336,15 @@ p {
     width: 20rem;
     height: 25rem;
     background-color: rgb(62, 74, 143);
-    margin:2rem;
     display: grid;
     grid-template-areas: 
     'h31'
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
-    background-image: url(./img/meny_e.jpg);
+    background-image: url(./img/meny_klassisktaco.jpg);
     background-size: cover;
+    margin: 2rem 2rem auto 10.6rem;
 }
 
 #wrap {
@@ -293,31 +352,31 @@ p {
     width: 20rem;
     height: 25rem;
     background-color: rgb(102, 166, 209);
-    margin:2rem;
     display: grid;
     grid-template-areas: 
     'h31'
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
-    background-image: url(./img/meny_c.jpg);
+    background-image: url(./img/meny_wrap.jpg);
     background-size: cover;
+    margin: 2rem 2rem auto 2rem;
 }
 
-#degistive {
+#digestive {
     grid-area: de;
     width: 20rem;
     height: 25rem;
     background-color: rgb(68, 52, 114);
-    margin:2rem;
     display: grid;
     grid-template-areas: 
     'h31'
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
-    background-image: url(./img/meny_d.jpg);
+    background-image: url(./img/meny_digestivetallrik.jpg);
     background-size: cover;
+    margin: 2rem 2rem auto 2rem;
 }
 
 #sectionB {
@@ -325,38 +384,38 @@ p {
     grid-template-areas: 
     'f1 f2';
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
 }
 
-#favorit1 {
+#sommarfavorit {
     grid-area: f1;
     width: 20rem;
     height: 25rem;
     background-color: rgb(58, 30, 75);
-    margin:2rem;
+    margin: 2rem 2rem auto 10.6rem;
     display: grid;
     grid-template-areas: 
     'h31'
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
-    background-image: url(./img/meny_a.jpg);
+    background-image: url(./img/meny_sommarfavorit.jpg);
     background-size: cover;
 }
 
-#favorit2 {
+#barfavorit {
     grid-area: f2;
     width: 20rem;
     height: 25rem;
     background-color: rgb(145, 70, 89);
-    margin:2rem;
+    margin: 2rem 2rem auto 2rem;
     display: grid;
     grid-template-areas: 
     'h31'
     'ul1'
     'h32';
     grid-template-rows: 5rem 11rem auto;
-    background-image: url(./img/meny_b.jpg);
+    background-image: url(./img/meny_barfavorit.jpg);
     background-size: cover;
 }
 
@@ -364,9 +423,15 @@ h2 {
     font-family: 'Playfair Display';
     font-size: 2.3rem;
     display: flex;
-    justify-content: center;
-    margin-top: 4rem;
-    margin-bottom: auto;
+    justify-content: flex-start;
+    margin: 4rem auto auto 10.6rem;
+    color: rgb(35, 8, 15);
+}
+
+hr {
+    width: 19.6rem;
+    margin-left: 10.6rem;
+    border: solid 3px rgb(35, 8, 15);
 }
 
 h4 {
@@ -374,18 +439,18 @@ h4 {
     font-size: 1.5rem;
 }
 
-.oossymbol {
+.ossymbol {
     height: 3rem;
 }
 
-.rubrik {
+.os {
     display: flex;
     justify-content: center;
+    color: rgb(255, 226, 203);
 }
 
 #brödtextomoss {
-    padding: 9rem;
-    padding-top: 1rem;
+    padding: 1rem 10.6rem 2rem 10.6rem;
 }
 
 #four {
@@ -397,32 +462,40 @@ h4 {
 
 #art1 {
     grid-area: art1;
-    background-color: white;
-    width: 20rem;
-    height: 20rem;
-    margin: auto 2rem 2rem auto;
+    background-color: rgb(234, 111, 120);
+    width: 33rem;
+    height: 23rem;
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+    margin: auto 1rem 1rem 10.6rem;
 }
 
 #art2 {
     grid-area: art2;
-    background-color: white;
-    width: 20rem;
-    height: 20rem;
-    margin: auto auto 2rem 2rem;
+    background-color: rgb(234, 111, 120);
+    width: 33rem;
+    height: 23rem;
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+    margin: auto 10.6rem 1rem 1rem;
 }
 
 #art3 {
     grid-area: art3;
-    background-color: white;
-    width: 20rem;
-    height: 20rem;
-    margin: 2rem 2rem auto auto;
+    background-color: rgb(234, 111, 120);
+    width: 33rem;
+    height: 23rem;
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+    margin: 1rem 1rem auto 10.6rem;
 }
 
 #art4 {
     grid-area: art4;
-    background-color: white;
-    width: 20rem;
-    height: 20rem;
-    margin: 2rem auto auto 2rem;
+    background-color: rgb(234, 111, 120);
+    width: 33rem;
+    height: 23rem;
+    padding-top: 3.5rem;
+    box-sizing: border-box;
+    margin: 1rem 10.6rem auto 1rem;
 }
