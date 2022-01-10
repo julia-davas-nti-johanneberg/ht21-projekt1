@@ -22,7 +22,7 @@
     'hd'
     'mn'
     'ft';
-    grid-template-rows: 30rem 73rem 34rem;
+    grid-template-rows: 30rem 57rem 34rem;
 }
 
 #headerhem {
@@ -40,22 +40,48 @@
     background-size: 100%;
 }
 
-.ljus {
-    color: rgb(255, 226, 203);
-}
-
-.dark {
-    color: rgb(35, 8, 15)
-}
-
 header {
     grid-area: hd;
 }
 
-#upp {
-    display: grid;
-    grid-template-areas: 
-    'h5 nav';
+main {
+    grid-area: mn;
+    background-color: rgb(255, 226, 203);
+}
+
+footer {
+    grid-area: ft;
+    background-color: rgb(178, 63, 77);
+    padding-top: 2rem;
+}
+
+h1 {
+    grid-area: h1;
+    font-family: 'Playfair Display';
+    font-size: 4.5em;
+    color: rgb(255, 226, 203);
+}
+
+h2 {
+    font-family: 'Playfair Display';
+    font-size: 2.3rem;
+    display: flex;
+    justify-content: flex-start;
+    margin: 4rem auto auto 10.6rem;
+    color: rgb(35, 8, 15);
+}
+
+h3 {
+    font-family: 'Playfair Display';
+    font-size: 2rem;
+    margin-left: 2.2rem;
+    grid-area: h31;
+    color: rgb(255, 226, 203);
+}
+
+h4 {
+    font-family: 'Playfair Display';
+    font-size: 1.5rem;
 }
 
 h5 {
@@ -69,6 +95,38 @@ h5 {
     color: rgb(255, 226, 203);
 }
 
+h6 {
+    font-family: 'Playfair Display';
+    font-size: 1.3rem;
+    color: rgb(255, 226, 203);
+}
+
+p {
+    font-family: 'Lato';
+    color: rgb(35, 8, 15);
+    font-size: 1.2rem;
+}
+
+hr {
+    width: 19.6rem;
+    margin-left: 10.6rem;
+    border: solid 3px rgb(35, 8, 15);
+}
+
+.ljus {
+    color: rgb(255, 226, 203);
+}
+
+.dark {
+    color: rgb(35, 8, 15);
+}
+
+#upp {
+    display: grid;
+    grid-template-areas: 
+    'h5 nav';
+}
+
 nav {
     display: flex;
     justify-content: flex-end;
@@ -76,6 +134,16 @@ nav {
     font-family: 'Lato';
     margin-right: 3rem;
     margin-top: 2rem;
+}
+
+ol {
+    list-style-type: none;
+}
+
+.navlista {
+    display: inline;
+    margin-left: 2rem;
+    font-size: 1.3rem;
 }
 
 a {
@@ -87,14 +155,6 @@ a:hover {
     color:rgb(35, 8, 15);
 }
 
-#knapp {
-    color: rgb(35, 8, 15);
-}
-
-#knapp:hover {
-    color:rgb(234, 111, 120);
-}
-
 #upp2 {
     display: grid;
     grid-template-areas: 
@@ -104,14 +164,6 @@ a:hover {
     grid-template-rows: 7rem 10rem;
     width: 65%;
     margin: auto;
-}
-
-h1 {
-    grid-area: h1;
-    font-family: 'Playfair Display';
-    font-size: 4.5em;
-    color: rgb(255, 226, 203);
-    
 }
 
 #pheader {
@@ -129,21 +181,6 @@ h1 {
     padding-top: 1rem;
 }
 
-ol {
-    list-style-type: none;
-}
-
-.navlista {
-    display: inline;
-    margin-left: 2rem;
-    font-size: 1.3rem;
-}
-
-main {
-    grid-area: mn;
-    background-color: rgb(255, 226, 203);
-}
-
 #fyrasteg {
     margin: 1rem 5rem 5rem 5rem;
     padding: 2rem;
@@ -152,6 +189,15 @@ main {
 #fyra {
     display: flex;
     justify-content: space-around;
+}
+
+#a {
+    margin: 2rem;
+}
+
+.enavfyra {
+    margin: auto;
+    color: rgb(35, 8, 15);
 }
 
 #b {
@@ -164,47 +210,16 @@ main {
     border-radius: 2rem;
 }
 
-#a {
-    margin: 2rem;
+#knapp {
+    color: rgb(35, 8, 15);
 }
 
-h3 {
-    font-family: 'Playfair Display';
-    font-size: 2rem;
-    margin-left: 2.2rem;
-    grid-area: h31;
-    color: rgb(255, 226, 203);
-}
-
-ul {
-    font-family: 'Lato';
-    grid-area: ul1;
-    font-size: 1.2rem;
-    font-weight: 1000;
-    margin-left: 1rem;
-    color: rgb(255, 226, 203);
-}
-
-.pris {
-    font-size: 3rem;
-    grid-area: h32;
-    display: flex;
-    justify-content: flex-end;
-    margin-right: 2.2rem;
-    color: rgb(255, 226, 203);
-}
-
-.enavfyra {
-    margin: auto;
-    color: black;
+#knapp:hover {
+    color:rgb(234, 111, 120);
 }
 
 #tworeviews {
     font-size: 1.3rem;
-}
-
-#review {
-    width: 11rem;
 }
 
 #rad1 {
@@ -243,6 +258,10 @@ ul {
     font-size: 1.5rem;
 }
 
+#symbolreview {
+    width: 11rem;
+}
+
 #person1 {
     height: 18rem;
     grid-area: p1;
@@ -267,60 +286,6 @@ ul {
     height: 18rem;
     grid-area: t2;
     margin: 0.5rem 0.5rem auto 0.5rem;
-}
-
-footer {
-    grid-area: ft;
-    background-color: rgb(178, 63, 77);
-    padding-top: 2rem;
-}
-
-#logo2 {
-    height: 9rem;
-}
-
-#footerlogga {
-    display: flex;
-    justify-content: center;
-    margin-bottom: 2rem;
-    margin-top: 1rem;
-}
-
-#footerinfo {
-    display: flex;
-    justify-content: space-around;
-}
-
-.footerinfo {
-    color: blanchedalmond;
-}
-
-h6 {
-    font-family: 'Playfair Display';
-    font-size: 1.3rem;
-    color: rgb(255, 226, 203);
-}
-
-p {
-    font-family: 'Lato';
-    color: rgb(35, 8, 15);
-    font-size: 1.2rem;
-}
-
-#findus { 
-    height: 3rem;
-}
-
-#contactus {
-    height: 3rem;
-}
-
-#followus {
-    height: 3rem;
-}
-
-#openinghours {
-    height: 3rem;
 }
 
 #sectionA {
@@ -419,33 +384,21 @@ p {
     background-size: cover;
 }
 
-h2 {
-    font-family: 'Playfair Display';
-    font-size: 2.3rem;
+ul {
+    font-family: 'Lato';
+    grid-area: ul1;
+    font-size: 1.2rem;
+    font-weight: 1000;
+    margin-left: 1rem;
+    color: rgb(255, 226, 203);
+}
+
+.pris {
+    font-size: 3rem;
+    grid-area: h32;
     display: flex;
-    justify-content: flex-start;
-    margin: 4rem auto auto 10.6rem;
-    color: rgb(35, 8, 15);
-}
-
-hr {
-    width: 19.6rem;
-    margin-left: 10.6rem;
-    border: solid 3px rgb(35, 8, 15);
-}
-
-h4 {
-    font-family: 'Playfair Display';
-    font-size: 1.5rem;
-}
-
-.ossymbol {
-    height: 3rem;
-}
-
-.os {
-    display: flex;
-    justify-content: center;
+    justify-content: flex-end;
+    margin-right: 2.2rem;
     color: rgb(255, 226, 203);
 }
 
@@ -454,48 +407,94 @@ h4 {
 }
 
 #four {
-    display: grid;
-    grid-template-areas: 
-    'art1 art2'
-    'art3 art4';
+    display: flex;
+    justify-content: space-around;
 }
 
 #art1 {
     grid-area: art1;
     background-color: rgb(234, 111, 120);
-    width: 33rem;
-    height: 23rem;
-    padding-top: 3.5rem;
+    width: 16rem;
+    height: 30rem;
+    padding-top: 3rem;
     box-sizing: border-box;
-    margin: auto 1rem 1rem 10.6rem;
+    margin: auto 0.3rem auto 10.6rem;
 }
 
 #art2 {
     grid-area: art2;
     background-color: rgb(234, 111, 120);
-    width: 33rem;
-    height: 23rem;
-    padding-top: 3.5rem;
+    width: 16rem;
+    height: 30rem;
+    padding-top: 3rem;
     box-sizing: border-box;
-    margin: auto 10.6rem 1rem 1rem;
+    margin: auto 0.3rem auto 0.3rem;
 }
 
 #art3 {
     grid-area: art3;
     background-color: rgb(234, 111, 120);
-    width: 33rem;
-    height: 23rem;
-    padding-top: 3.5rem;
+    width: 16rem;
+    height: 30rem;
+    padding-top: 3rem;
     box-sizing: border-box;
-    margin: 1rem 1rem auto 10.6rem;
+    margin: auto 0.3rem auto 0.3rem;
 }
 
 #art4 {
     grid-area: art4;
     background-color: rgb(234, 111, 120);
-    width: 33rem;
-    height: 23rem;
-    padding-top: 3.5rem;
+    width: 16rem;
+    height: 30rem;
+    padding-top: 3rem;
     box-sizing: border-box;
-    margin: 1rem 10.6rem auto 1rem;
+    margin: auto 10.6rem auto 0.3rem;
+}
+
+.os {
+    display: flex;
+    justify-content: center;
+    color: rgb(255, 226, 203);
+    margin: 1.5rem 2rem auto 2rem;
+    text-align: center;
+}
+
+.ossymbol {
+    height: 3rem;
+}
+
+#footerlogga {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+
+#logo2 {
+    height: 9rem;
+}
+
+#footerinfo {
+    display: flex;
+    justify-content: space-around;
+}
+
+#findus { 
+    height: 3rem;
+}
+
+#contactus {
+    height: 3rem;
+}
+
+#followus {
+    height: 3rem;
+}
+
+#openinghours {
+    height: 3rem;
+}
+
+.footerinfo {
+    color: blanchedalmond;
 }
